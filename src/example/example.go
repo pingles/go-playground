@@ -8,7 +8,7 @@ import "C"
 import "fmt"
 
 func main() {
-  r := C.GoString(C.sqlite3_libversion())
+  version := C.GoString(C.sqlite3_libversion())
   
-  fmt.Println("libsqlite3 version", r)
+  fmt.Println("libsqlite3 version", version)
 }
